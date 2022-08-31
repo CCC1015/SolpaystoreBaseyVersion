@@ -1,0 +1,18 @@
+[
+  {
+    "id": 1,
+    "name": "Aidoken",
+    "price": "0.05",
+    "description": "A premium ticket that gives acces to a secret community",
+    "image_url": "https://i.imgur.com/rVD8bjt.png",
+    "filename": "Emojis.zip",
+    "hash": "QmWWH69mTL66r3H8P4wUn24t1L5pvdTJGUTKBqT11KCHS5"
+  },
+  {
+    "id": 2,
+    "name": "Best Game Ever",
+    "price": "20",
+    "image_url": "https://imgur.com/3z5d6AE.png",
+    "description": "hi"
+  }
+]
