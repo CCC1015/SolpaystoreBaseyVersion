@@ -40,8 +40,8 @@ const createTransaction = async (req, res) => {
     const endpoint = clusterApiUrl(network);
     const connection = new Connection(endpoint);
 
-    const buyershrimpAddress = await getAssociatedTokenAddress(usdcAddress, buyerPublicKey);
-    const shopshrimpAddress = await getAssociatedTokenAddress(usdcAddress, sellerPublicKey);
+    const buyershrimpAddress = await getAssociatedTokenAddress(shrimpAddress, buyerPublicKey);
+    const shopshrimpAddress = await getAssociatedTokenAddress(shrimpAddress, sellerPublicKey);
     const buyerUsdcAddress = await getAssociatedTokenAddress(usdcAddress, buyerPublicKey);
     const shopUsdcAddress = await getAssociatedTokenAddress(usdcAddress, sellerPublicKey);
     const { blockhash } = await connection.getLatestBlockhash("finalized");

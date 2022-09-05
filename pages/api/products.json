@@ -6,7 +6,7 @@
     "description": "One Raffle ticket",
     "image_url": "https://imgur.com/FdJZNiN.png",
     "filename": "Gmingo!.png",
-    "tokenType": "shrimp" ,
+    "tokenType": "SHRIMP" ,
     "hash": "QmQKskbhVNHL1pYr5raKBHGHYpDgzv4j4H3M3jCv7EhJwQ"
   },
   {
@@ -16,7 +16,7 @@
     "image_url": "https://imgur.com/FdJZNiN.png",
     "description": "One Raffle ticket",
     "filename": "Gmingo!.png",
-    "tokenType": "usdc",
+    "tokenType": "USDC",
     "hash": "QmQKskbhVNHL1pYr5raKBHGHYpDgzv4j4H3M3jCv7EhJwQ"
   },
   {
@@ -26,7 +26,7 @@
     "image_url": "https://imgur.com/FdJZNiN.png",
     "description": "One Raffle ticket",
     "filename": "Gmingo!.png",
-    "tokenType": "usdc" ,
+    "tokenType": "SHRIMP" ,
     "hash": "QmQKskbhVNHL1pYr5raKBHGHYpDgzv4j4H3M3jCv7EhJwQ"
   }
 ]

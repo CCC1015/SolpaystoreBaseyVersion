@@ -3,7 +3,7 @@ import styles from "../styles/Product.module.css";
 import Buy from "./Buy";
 
 export default function Product({ product }) {
-  const { id, name, price, description, image_url } = product;
+  const { id, name, price, description, image_url, tokenType } = product;
 
   return (
     <div className={styles.product_container}>
@@ -18,7 +18,7 @@ export default function Product({ product }) {
         </div>
 
         <div className={styles.product_action}>
-          <div className={styles.product_price}>{price} USDC</div>
+          <div className={styles.product_price}>{price} {tokenType}</div>
             {/* Replace the IPFS component with the Buy component! */}
             <Buy itemID={id} />
         </div>
@@ -26,3 +26,4 @@ export default function Product({ product }) {
     </div>
   );
 }
+
