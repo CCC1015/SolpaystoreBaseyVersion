@@ -5,7 +5,8 @@ import BigNumber from "bignumber.js";
 import products from "./products.json";
 
 const usdcAddress = new PublicKey("EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v");
-const sellerAddress = "B1aLAAe4vW8nSQCetXnYqJfRxzTjnbooczwkUJAr7yMS";
+const shrimpAddress = new PublicKey("4AHDENUSystAUR3VEgcUFLYAVL4BGNhLgq8uaAaKoQKq");
+const sellerAddress = "BK98C8fVGJghpbkjpUTAYpbkEadJzcEYDnH8WC3eLpD5";
 const sellerPublicKey = new PublicKey(sellerAddress);
 
 const createTransaction = async (req, res) => {
@@ -24,6 +25,7 @@ const createTransaction = async (req, res) => {
     }
 
     const itemPrice = products.find((item) => item.id === itemID).price;
+    const tokenType = products.find((item) => item.id === itemID).tokenType;
 
     if (!itemPrice) {
       res.status(404).json({
@@ -38,20 +40,42 @@ const createTransaction = async (req, res) => {
     const endpoint = clusterApiUrl(network);
     const connection = new Connection(endpoint);
 
+    const buyershrimpAddress = await getAssociatedTokenAddress(usdcAddress, buyerPublicKey);
+    const shopshrimpAddress = await getAssociatedTokenAddress(usdcAddress, sellerPublicKey);
     const buyerUsdcAddress = await getAssociatedTokenAddress(usdcAddress, buyerPublicKey);
     const shopUsdcAddress = await getAssociatedTokenAddress(usdcAddress, sellerPublicKey);
     const { blockhash } = await connection.getLatestBlockhash("finalized");
     
     // This is new, we're getting the mint address of the token we want to transfer
     const usdcMint = await getMint(connection, usdcAddress);
+    const shrimpMint = await getMint(connection, shrimpAddress);
     
     const tx = new Transaction({
       recentBlockhash: blockhash,
       feePayer: buyerPublicKey,
     });
     
+  // Here we're creating a different type of transfer instruction
+  if( tokenType === "shrimp"){const transferInstruction = createTransferCheckedInstruction(
+    buyershrimpAddress, 
+    shrimpAddress,     // This is the address of the token we want to transfer
+    shopshrimpAddress, 
+    buyerPublicKey, 
+    bigAmount.toNumber() * 10 ** (await shrimpMint).decimals, 
+    shrimpMint.decimals // The token could have any number of decimals
+  );
+   // The rest remains the same :)
+   transferInstruction.keys.push({
+    pubkey: new PublicKey(orderID),
+    isSigner: false,
+    isWritable: false,
+  });
+
+  tx.add(transferInstruction);}
+  
+
     // Here we're creating a different type of transfer instruction
-    const transferInstruction = createTransferCheckedInstruction(
+    if( tokenType === "usdc"){ const transferInstruction = createTransferCheckedInstruction(
       buyerUsdcAddress, 
       usdcAddress,     // This is the address of the token we want to transfer
       shopUsdcAddress, 
@@ -67,7 +91,7 @@ const createTransaction = async (req, res) => {
       isWritable: false,
     });
 
-    tx.add(transferInstruction);
+    tx.add(transferInstruction);}
 
     const serializedTransaction = tx.serialize({
       requireAllSignatures: false,

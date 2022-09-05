@@ -7,7 +7,7 @@ import { useWallet } from "@solana/wallet-adapter-react";
 import { WalletMultiButton } from "@solana/wallet-adapter-react-ui";
 
 // Constants
-const TWITTER_HANDLE = "_buildspace";
+const TWITTER_HANDLE = "BaseySOL";
 const TWITTER_LINK = `https://twitter.com/${TWITTER_HANDLE}`;
 
 const App = () => {
@@ -18,7 +18,7 @@ const App = () => {
   
   const renderNotConnectedContainer = () => (
     <div>
-      <img src="https://media.giphy.com/media/eSwGh3YK54JKU/giphy.gif" alt="emoji" />
+      <img src="https://media.giphy.com/media/MZbCfM0nOH4pTVPlur/giphy-downsized-large.gif" alt="emoji" />
 
       <div className="button-container">
         <WalletMultiButton className="cta-button connect-wallet-button" />
@@ -50,8 +50,8 @@ const App = () => {
       <HeadComponent/>
       <div className="container">
         <header className="header-container">
-          <p className="header"> 😳 Buildspace Emoji Store 😈</p>
-          <p className="sub-text">The only emoji store that accepts shitcoins</p>
+          <p className="header"> Aidoken Pegasus Ticket Store</p>
+          <p className="sub-text">A place to spend useless tokens</p>
 
           {isOwner && (
             <button className="create-product-button" onClick={() => setCreating(!creating)}>

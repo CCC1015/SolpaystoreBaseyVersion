@@ -1,18 +1,32 @@
 [
   {
     "id": 1,
-    "name": "Aidoken",
-    "price": "0.05",
-    "description": "A premium ticket that gives acces to a secret community",
-    "image_url": "https://i.imgur.com/rVD8bjt.png",
-    "filename": "Emojis.zip",
-    "hash": "QmWWH69mTL66r3H8P4wUn24t1L5pvdTJGUTKBqT11KCHS5"
+    "name": "SHRIMP Ticket",
+    "price": "0.03",
+    "description": "One Raffle ticket",
+    "image_url": "https://imgur.com/FdJZNiN.png",
+    "filename": "Gmingo!.png",
+    "tokenType": "shrimp" ,
+    "hash": "QmQKskbhVNHL1pYr5raKBHGHYpDgzv4j4H3M3jCv7EhJwQ"
   },
   {
     "id": 2,
-    "name": "Best Game Ever",
-    "price": "20",
-    "image_url": "https://imgur.com/3z5d6AE.png",
-    "description": "hi"
+    "name": "SHRIMP Ticket",
+    "price": "0.01",
+    "image_url": "https://imgur.com/FdJZNiN.png",
+    "description": "One Raffle ticket",
+    "filename": "Gmingo!.png",
+    "tokenType": "usdc",
+    "hash": "QmQKskbhVNHL1pYr5raKBHGHYpDgzv4j4H3M3jCv7EhJwQ"
+  },
+  {
+    "id": 3,
+    "name": "SHRIMP Ticket",
+    "price": "0.02",
+    "image_url": "https://imgur.com/FdJZNiN.png",
+    "description": "One Raffle ticket",
+    "filename": "Gmingo!.png",
+    "tokenType": "usdc" ,
+    "hash": "QmQKskbhVNHL1pYr5raKBHGHYpDgzv4j4H3M3jCv7EhJwQ"
   }
 ]

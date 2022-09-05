@@ -47,7 +47,7 @@ export default function Buy({ itemID }) {
     // Attempt to send the transaction to the network
     try {
       const txHash = await sendTransaction(tx, connection);
-      console.log(`Transaction sent: https://solscan.io/tx/${txHash}?cluster=devnet`);
+      console.log(`Transaction sent: https://solscan.io/tx/${txHash}?cluster=mainnet`);
       setStatus(STATUS.Submitted);
     } catch (error) {
       console.error(error);
