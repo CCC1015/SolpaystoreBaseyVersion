@@ -1,32 +1,43 @@
 [
   {
-    "id": 1,
+    "id": 5,
     "name": "SHRIMP Ticket",
     "price": "0.03",
     "description": "One Raffle ticket",
     "image_url": "https://imgur.com/FdJZNiN.png",
     "filename": "Gmingo!.png",
-    "tokenType": "SHRIMP" ,
+    "tokenType": "shrimp" ,
     "hash": "QmQKskbhVNHL1pYr5raKBHGHYpDgzv4j4H3M3jCv7EhJwQ"
   },
   {
-    "id": 2,
+    "id": 6,
     "name": "SHRIMP Ticket",
     "price": "0.01",
     "image_url": "https://imgur.com/FdJZNiN.png",
     "description": "One Raffle ticket",
     "filename": "Gmingo!.png",
-    "tokenType": "USDC",
+    "tokenType": "shrimp",
     "hash": "QmQKskbhVNHL1pYr5raKBHGHYpDgzv4j4H3M3jCv7EhJwQ"
   },
   {
-    "id": 3,
+    "id": 7,
     "name": "SHRIMP Ticket",
     "price": "0.02",
     "image_url": "https://imgur.com/FdJZNiN.png",
     "description": "One Raffle ticket",
     "filename": "Gmingo!.png",
-    "tokenType": "SHRIMP" ,
+    "tokenType": "shrimp" ,
     "hash": "QmQKskbhVNHL1pYr5raKBHGHYpDgzv4j4H3M3jCv7EhJwQ"
+  },
+  {
+    "id": 8,
+    "name": "SHRIMP Ticket",
+    "price": "0.01",
+    "image_url": "https://imgur.com/FdJZNiN.png",
+    "description": "One Raffle ticket",
+    "filename": "Gmingo!.png",
+    "tokenType": "shrimp" ,
+    "hash": "QmQKskbhVNHL1pYr5raKBHGHYpDgzv4j4H3M3jCv7EhJwQ"
+    
   }
 ]
