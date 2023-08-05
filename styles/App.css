@@ -15,6 +15,7 @@
   padding: 0 30px 0 30px;
   color: rgba(231, 159, 24, 0.993);
   position: relative;
+  padding-bottom: 800px;
 }
 
 .authed-container {
@@ -26,9 +27,9 @@
 
 .header {
   margin: 0;
-  font-size: 50px;
+  font-size: 120px;
   font-weight: bold;
-  margin-top: -1200px;
+  margin-top: -700px;
 }
 
 .sub-text {
@@ -168,7 +169,7 @@ button:disabled {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  margin-top: -1000px;
+  margin-top: -400px;
 }
 /* KeyFrames */
 @-webkit-keyframes gradient-animation {

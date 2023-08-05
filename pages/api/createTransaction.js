@@ -6,6 +6,7 @@ import products from "./products.json";
 
 const usdcAddress = new PublicKey("EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v");
 const shrimpAddress = new PublicKey("4AHDENUSystAUR3VEgcUFLYAVL4BGNhLgq8uaAaKoQKq");
+const bonkAddress = new PublicKey("DezXAZ8z7PnrnRJjz3wXBoRgixCa6xjnB7YaB1pPB263");
 const sellerAddress = "BK98C8fVGJghpbkjpUTAYpbkEadJzcEYDnH8WC3eLpD5";
 const sellerPublicKey = new PublicKey(sellerAddress);
 
@@ -40,6 +41,8 @@ const createTransaction = async (req, res) => {
     const endpoint = clusterApiUrl(network);
     const connection = new Connection(endpoint);
 
+    const buyerbonkAddress = await getAssociatedTokenAddress(bonkAddress, buyerPublicKey);
+    const shopbonkAddress = await getAssociatedTokenAddress(bonkAddress, sellerPublicKey);
     const buyershrimpAddress = await getAssociatedTokenAddress(shrimpAddress, buyerPublicKey);
     const shopshrimpAddress = await getAssociatedTokenAddress(shrimpAddress, sellerPublicKey);
     const buyerUsdcAddress = await getAssociatedTokenAddress(usdcAddress, buyerPublicKey);
@@ -49,6 +52,7 @@ const createTransaction = async (req, res) => {
     // This is new, we're getting the mint address of the token we want to transfer
     const usdcMint = await getMint(connection, usdcAddress);
     const shrimpMint = await getMint(connection, shrimpAddress);
+    const bonkMint = await getMint(connection, bonkAddress);
     
     const tx = new Transaction({
       recentBlockhash: blockhash,
@@ -70,8 +74,34 @@ const createTransaction = async (req, res) => {
     isSigner: false,
     isWritable: false,
   });
+  
 
   tx.add(transferInstruction);}
+
+  //
+
+   // Here we're creating a different type of transfer instruction
+   if( tokenType === "bonk"){const transferInstruction = createTransferCheckedInstruction(
+    buyerbonkAddress, 
+    bonkAddress,     // This is the address of the token we want to transfer
+    shopbonkAddress, 
+    buyerPublicKey, 
+    bigAmount.toNumber() * 10 ** (await bonkMint).decimals, 
+    bonkMint.decimals // The token could have any number of decimals
+  );
+   // The rest remains the same :)
+   transferInstruction.keys.push({
+    pubkey: new PublicKey(orderID),
+    isSigner: false,
+    isWritable: false,
+  });
+  
+
+  tx.add(transferInstruction);}
+
+
+
+  //
   
 
     // Here we're creating a different type of transfer instruction

@@ -18,7 +18,7 @@ const App = () => {
   
   const renderNotConnectedContainer = () => (
     <div>
-      <img src="https://media.giphy.com/media/xUPGGDNsLvqsBOhuU0/giphy.gif" alt="emoji" />
+      <img src="https://media.giphy.com/media/9LZpR17spJd4aFZW8u/giphy.gif" alt="emoji" />
 
       <div className="button-container">
         <WalletMultiButton className="cta-button connect-wallet-button" />
@@ -50,8 +50,8 @@ const App = () => {
       <HeadComponent/>
       <div className="container">
         <header className="header-container">
-          <p className="header"> Aidoken Pegasus Wild ticket store</p>
-          <p className="sub-text">A place to spend your tokens</p>
+          <p className="header"> The Solana Mall</p>
+          <p className="sub-text">A place to spend your Solana</p>
 
           {isOwner && (
             <button className="create-product-button" onClick={() => setCreating(!creating)}>

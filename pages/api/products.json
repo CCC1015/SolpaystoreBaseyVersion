@@ -47,18 +47,18 @@
     "description": "One Raffle ticket",
     "image_url": "https://imgur.com/FdJZNiN.png",
     "filename": "Gmingo!.png",
-    "tokenType": "shrimp" ,
+    "tokenType": "usdc" ,
     "hash": "QmQKskbhVNHL1pYr5raKBHGHYpDgzv4j4H3M3jCv7EhJwQ"
 
   },
   {
-    "id": 25,
-    "name": "SHRIMP Ticket",
+    "id": 10,
+    "name": "Discord Nitro 3 Months",
     "price": "0.03",
     "description": "One Raffle ticket",
-    "image_url": "https://imgur.com/FdJZNiN.png",
+    "image_url": "https://imgur.com/n2BcLde.png",
     "filename": "Gmingo!.png",
-    "tokenType": "shrimp" ,
+    "tokenType": "bonk" ,
     "hash": "QmQKskbhVNHL1pYr5raKBHGHYpDgzv4j4H3M3jCv7EhJwQ"
 
   }
