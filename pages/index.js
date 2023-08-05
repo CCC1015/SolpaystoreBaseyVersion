@@ -46,7 +46,7 @@ const App = () => {
   );
 
   return (
-    <div className="App">
+    <div className="App" >
       <HeadComponent/>
       <div className="container">
         <header className="header-container">

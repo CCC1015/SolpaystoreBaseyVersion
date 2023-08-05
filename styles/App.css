@@ -1,10 +1,10 @@
 .App {
-  height: 100vh;
-  background-image: url("https://i.imgur.com/rMkA2H1.png");
-    background-repeat: 1;
-    background-size: contain;
+  height: 100vw;
+  background-image: url("https://imgur.com/3wNQaJd.png");
+    background-repeat: 0;
+    background-size: contain ;
   text-align: center;
-  overflow: hidden;
+  overflow: hidden ;
 }
 
 .container {
@@ -13,7 +13,7 @@
   flex-direction: column;
   justify-content: center;
   padding: 0 30px 0 30px;
-  color: rgb(231, 142, 24);
+  color: rgba(231, 159, 24, 0.993);
   position: relative;
 }
 
@@ -28,6 +28,7 @@
   margin: 0;
   font-size: 50px;
   font-weight: bold;
+  margin-top: -1200px;
 }
 
 .sub-text {
@@ -35,7 +36,7 @@
 }
 
 .gradient-text {
-  background: -webkit-linear-gradient(left, #60c657 30%, #35aee2 60%);
+  background: -webkit-linear-gradient(left, #c657aa 30%, #35aee2 60%);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -115,7 +116,7 @@ button:disabled {
   height: 60px;
   font-size: 16px;
   box-sizing: border-box;
-  background-color: rgba(0, 0, 0, 0.25);
+  background-color: rgba(245, 245, 245, 0.25);
   border: none;
   border-radius: 10px;
   margin: 50px auto;
@@ -137,7 +138,7 @@ button:disabled {
 
 .download-button {
   border: none;
-  background-color: #4664ff;
+  background-color: #d13b3b;
   color: #fff;
   font-size: 16px;
   border-radius: 3px;
@@ -167,7 +168,7 @@ button:disabled {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  margin-top: 20px;
+  margin-top: -1000px;
 }
 /* KeyFrames */
 @-webkit-keyframes gradient-animation {
