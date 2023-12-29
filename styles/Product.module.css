@@ -5,17 +5,17 @@
   align-items: center;
   max-width: 320px;
   height: 400px;
-  background-color: #f75b0034;
+  background-color: #cc6ce6be;
   margin: 15px;
   padding: 20px;
   border-radius: 16px;
-  border: 1px solid rgb(109, 105, 105);
+  border: 1px solid rgb(252, 252, 252);
   /* background: url('../public/blur-bg.png') */
 }
 
 .product_image{
   width: 140px;
-  background-color: #db0e0e;
+  background-color: #ec4aa346;
 }
 
 .product_details{

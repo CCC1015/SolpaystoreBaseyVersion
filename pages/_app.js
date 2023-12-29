@@ -8,7 +8,7 @@ import {
   SlopeWalletAdapter,
   SolflareWalletAdapter,
   TorusWalletAdapter,
-} from "@solana/wallet-adapter-wallets";
+ } from "@solana/wallet-adapter-wallets";
 import { clusterApiUrl } from "@solana/web3.js";
 
 import "@solana/wallet-adapter-react-ui/styles.css";

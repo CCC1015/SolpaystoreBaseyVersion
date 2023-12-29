@@ -1,11 +1,107 @@
 .App {
-  height: 100vw;
-  background-image: url("https://imgur.com/3wNQaJd.png");
-    background-repeat: 0;
-    background-size: contain ;
+  height: 100vw; 
+  width: 100vw;
+  margin-top: 300;
+  background-image: url("https://imgur.com/74ykXnp.png");
+    background-repeat: no-repeat;
+    background-size: cover ;
+    background-color: #c657aa3f;
   text-align: center;
   overflow: hidden ;
 }
+
+
+.Logo{
+  height: 100vw; 
+  width: 100vw;
+  margin-top: -800px;
+margin-bottom: 500px;
+padding-right: 50px;
+}
+
+
+.twitter-timeline{
+  height: 45px;
+  border: 0;
+  width: auto;
+
+  margin-left: 780px;
+  margin-top: 40px;
+
+
+  padding-left: 40px;
+  padding-right: 40px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+  background: -webkit-linear-gradient(left, #6e20ff, #f70274);
+  background-size: 200% 200%;
+  animation: gradient-animation 1s ease infinite;
+  max-width: 300px;
+}
+.twitter-timeline2{
+  height: 45px;
+  border: 0;
+  width: auto;
+
+  margin-left: 780px;
+  margin-top: 40px;
+
+  padding-left: 40px;
+  padding-right: 40px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+  background: -webkit-linear-gradient(left, #ff20cf, #f70274);
+  background-size: 200% 200%;
+  animation: gradient-animation 1s ease infinite;
+  max-width: 300px;
+ }
+
+ .twitter-timeline3{
+  height: 45px;
+  border: 0;
+  width: auto;
+
+  margin-left: 780px;
+  margin-top: 40px;
+
+  padding-left: 40px;
+  padding-right: 40px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+  background: -webkit-linear-gradient(left, #ff20cf, #f70274);
+  background-size: 200% 200%;
+  animation: gradient-animation 1s ease infinite;
+  max-width: 300px;
+ }
+ .twitter-timeline4{
+  height: 45px;
+  border: 0;
+  width: auto;
+
+  margin-left: 780px;
+  margin-top: 40px;
+
+  padding-left: 40px;
+  padding-right: 40px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+  background: -webkit-linear-gradient(left, #ff20cf, #f70274);
+  background-size: 200% 200%;
+  animation: gradient-animation 1s ease infinite;
+  max-width: 300px;
+  }
 
 .container {
   height: 100%;
@@ -13,7 +109,7 @@
   flex-direction: column;
   justify-content: center;
   padding: 0 30px 0 30px;
-  color: rgba(231, 159, 24, 0.993);
+  color: rgb(255, 255, 255);
   position: relative;
   padding-bottom: 800px;
 }
@@ -26,13 +122,18 @@
 }
 
 .header {
-  margin: 0;
-  font-size: 120px;
-  font-weight: bold;
-  margin-top: -700px;
+  background-size: 100px;
+  padding-left: 200px;
+  margin-left: 800px;
+  height: 10vw;
+  width: 10vw;
+  color: #88eea6fb;
+  margin-top: -200px;
+  margin-top: 150px;
 }
 
 .sub-text {
+  color: rgba(245, 134, 236, 0.993);
   font-size: 25px;
 }
 
@@ -69,6 +170,7 @@
   animation: gradient-animation 4s ease infinite;
   max-width: 300px;
 }
+
 
 .mint-button {
   background: -webkit-linear-gradient(left, #4e44ce, #35aee2);
@@ -129,7 +231,7 @@ button:disabled {
 
 .buy-button {
   border: none;
-  background-color: #4664ff;
+  background-color: #0fdd87b0;
   color: #fff;
   font-size: 16px;
   border-radius: 3px;
@@ -163,13 +265,15 @@ button:disabled {
   z-index: 1;
 }
 
+
+
 .products-container{
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  margin-top: -400px;
+  margin-top: -80px;
 }
 /* KeyFrames */
 @-webkit-keyframes gradient-animation {

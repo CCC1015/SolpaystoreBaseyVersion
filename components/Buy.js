@@ -79,7 +79,9 @@ export default function Buy({ itemID }) {
         try {
           const result = await findReference(connection, orderID);
           console.log("Finding tx reference", result.confirmationStatus);
-          if (result.confirmationStatus === "confirmed" || result.confirmationStatus === "finalized") {
+          if (result.confirmationStatus === "confirmed" || 
+          result.confirmationStatus === "finalized"
+          ) {
             clearInterval(interval);
             setStatus(STATUS.Paid);
             addOrder(order);

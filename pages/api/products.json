@@ -1,39 +1,10 @@
 [
-  {
-    "id": 20,
-    "name": "SHRIMP Ticket",
-    "price": "0.03",
-    "description": "One Raffle ticket",
-    "image_url": "https://imgur.com/FdJZNiN.png",
-    "filename": "Gmingo!.png",
-    "tokenType": "shrimp" ,
-    "hash": "QmQKskbhVNHL1pYr5raKBHGHYpDgzv4j4H3M3jCv7EhJwQ"
-  },
-  {
-    "id": 21,
-    "name": "SHRIMP Ticket",
-    "price": "0.01",
-    "image_url": "https://imgur.com/FdJZNiN.png",
-    "description": "One Raffle ticket",
-    "filename": "Gmingo!.png",
-    "tokenType": "shrimp",
-    "hash": "QmQKskbhVNHL1pYr5raKBHGHYpDgzv4j4H3M3jCv7EhJwQ"
-  },
-  {
-    "id": 22,
-    "name": "SHRIMP Ticket",
-    "price": "0.02",
-    "image_url": "https://imgur.com/FdJZNiN.png",
-    "description": "One Raffle ticket",
-    "filename": "Gmingo!.png",
-    "tokenType": "shrimp" ,
-    "hash": "QmQKskbhVNHL1pYr5raKBHGHYpDgzv4j4H3M3jCv7EhJwQ"
-  },
+
   {
     "id": 23,
-    "name": "SHRIMP Ticket",
-    "price": "0.01",
-    "image_url": "https://imgur.com/FdJZNiN.png",
+    "name": "$SHRIMP Ticket",
+    "price": "500",
+    "image_url": "https://imgur.com/jt9U9eN.png",
     "description": "One Raffle ticket",
     "filename": "Gmingo!.png",
     "tokenType": "shrimp" ,
@@ -42,10 +13,10 @@
   },
   {
     "id": 24,
-    "name": "SHRIMP Ticket",
-    "price": "0.03",
+    "name": "USDC Ticket",
+    "price": "1",
     "description": "One Raffle ticket",
-    "image_url": "https://imgur.com/FdJZNiN.png",
+    "image_url": "https://imgur.com/jt9U9eN.png",
     "filename": "Gmingo!.png",
     "tokenType": "usdc" ,
     "hash": "QmQKskbhVNHL1pYr5raKBHGHYpDgzv4j4H3M3jCv7EhJwQ"
@@ -53,12 +24,12 @@
   },
   {
     "id": 10,
-    "name": "Discord Nitro 3 Months",
-    "price": "0.03",
+    "name": "BONK Ticket",
+    "price": "10000",
     "description": "One Raffle ticket",
-    "image_url": "https://imgur.com/n2BcLde.png",
+    "image_url": "https://imgur.com/jt9U9eN.png",
     "filename": "Gmingo!.png",
-    "tokenType": "bonk" ,
+    "tokenType": "bonk",
     "hash": "QmQKskbhVNHL1pYr5raKBHGHYpDgzv4j4H3M3jCv7EhJwQ"
 
   }

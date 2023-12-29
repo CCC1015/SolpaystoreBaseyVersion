@@ -7,7 +7,7 @@ import { useWallet } from "@solana/wallet-adapter-react";
 import { WalletMultiButton } from "@solana/wallet-adapter-react-ui";
 
 // Constants
-const TWITTER_HANDLE = "BaseySOL";
+const TWITTER_HANDLE = "AidokenPegasus";
 const TWITTER_LINK = `https://twitter.com/${TWITTER_HANDLE}`;
 
 const App = () => {
@@ -16,15 +16,22 @@ const App = () => {
   const [creating, setCreating] = useState(false);
   const [products, setProducts] = useState([]);
   
+  //https://media.giphy.com/media/9LZpR17spJd4aFZW8u/giphy.gif
+  //That's the OG gif
+
   const renderNotConnectedContainer = () => (
     <div>
-      <img src="https://media.giphy.com/media/9LZpR17spJd4aFZW8u/giphy.gif" alt="emoji" />
+      <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExanU0bXRtZzlud20za2diZGNvcTExd3lrcHZmcTc4MW8ybmtkYjh3cyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/pOXlccJ5WnGjSLzj8k/giphy.gif" alt="emoji" />
+
 
       <div className="button-container">
         <WalletMultiButton className="cta-button connect-wallet-button" />
       </div>    
     </div>
   );
+
+ 
+    
   
   useEffect(() => {
     if (publicKey) {
@@ -45,14 +52,17 @@ const App = () => {
     </div>
   );
 
+
+  
+  
   return (
     <div className="App" >
       <HeadComponent/>
       <div className="container">
+        
         <header className="header-container">
-          <p className="header"> The Solana Mall</p>
-          <p className="sub-text">A place to spend your Solana</p>
-
+          <p className="header"></p>
+          <p className="sub-text"></p>
           {isOwner && (
             <button className="create-product-button" onClick={() => setCreating(!creating)}>
               {creating ? "Close" : "Create Product"}
@@ -65,6 +75,32 @@ const App = () => {
           {publicKey ? renderItemBuyContainer() : renderNotConnectedContainer()}
         </main>
 
+        <div className="Logo">
+          <img src="https://imgur.com/fJEkJvJ.png" ></img>
+  
+    </div>
+
+
+
+<div className="twitter-timeline">
+hi i wanna thank you for holding on
+</div>
+
+<div className="twitter-timeline2">
+hi i wanna thank you for holding on
+</div>
+
+<div className="twitter-timeline3">
+hi i wanna thank you for holding on
+</div>
+
+<div className="twitter-timeline4">
+hi i wanna thank you for holding on
+</div>
+
+
+        
+        
         <div className="footer-container">
           <img alt="Twitter Logo" className="twitter-logo" src="twitter-logo.svg" />
           <a
