@@ -20,6 +20,8 @@ const App = ({ Component, pageProps }) => {
   const network = WalletAdapterNetwork.Mainnet;
 
   // You can also provide a custom RPC endpoint
+  // https://solana-mainnet.core.chainstack.com/4af3a4f2bb060552bebc4c156b4df50a
+
   const endpoint = useMemo(() => clusterApiUrl(network), [network]);
 
   // @solana/wallet-adapter-wallets includes all the adapters but supports tree shaking and lazy loading --

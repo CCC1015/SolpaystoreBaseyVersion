@@ -15,6 +15,6 @@ return (
 </Routes>
 </BrowserRouter>
 </div>
-)
+);
 
 }
