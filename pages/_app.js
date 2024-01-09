@@ -44,25 +44,26 @@ const App = ({ Component, pageProps }) => {
   );
 
   return (
-
-    <><div>
-      <BrowserRouter>
-        <Routes>
-          <Route index element={<Home />} />
-          <Route path="/Home" element={<Home />} />
-          <Route path="/About" element={<About />} />
-          <Route path="/Contact" element={<Contact />} />
-        </Routes>
-      </BrowserRouter>
-    </div><ConnectionProvider endpoint={endpoint}>
-        <WalletProvider wallets={wallets} autoConnect>
-          <WalletModalProvider>
-            <Component {...pageProps} />
-          </WalletModalProvider>
-        </WalletProvider>
-      </ConnectionProvider></>
+    
+    <ConnectionProvider endpoint={endpoint}>
+      <WalletProvider wallets={wallets} autoConnect>
+        <WalletModalProvider>
+          <Component {...pageProps} />
+        </WalletModalProvider>
+      </WalletProvider>
+    </ConnectionProvider>
   );
 };
 
+<div>
+    <BrowserRouter>
+    <Routes>
+    <Route index element={<Home />} />
+    <Route path="/Home" element={<Home />} />
+    <Route path="/About" element={<About />} />
+    <Route path="/Contact" element={<Contact />} />
+    </Routes>
+    </BrowserRouter>
+    </div>  
 
 export default App;
