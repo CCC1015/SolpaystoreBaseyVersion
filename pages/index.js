@@ -6,11 +6,6 @@ import HeadComponent from '../components/Head';
 import { useWallet } from "@solana/wallet-adapter-react";
 import { WalletMultiButton } from "@solana/wallet-adapter-react-ui";
 
-import { BrowserRouter, Routes, Route } from "react-router-dom"
-import About from "./About";
-import Contact from "./Contact";
-import Home from "./Home";
-
 // Constants
 const TWITTER_HANDLE = "AidokenPegasus";
 const TWITTER_LINK = `https://twitter.com/${TWITTER_HANDLE}`;
@@ -84,17 +79,6 @@ const App = () => {
           <img src="https://imgur.com/fJEkJvJ.png" ></img>
   
     </div>
-
-    <div>
-  <BrowserRouter>
-  <Routes>
-  <Route index element={<Home />} />
-  <Route path="/Home" element={<Home />} />
-  <Route path="/About" element={<About />} />
-  <Route path="/Contact" element={<Contact />} />
-  </Routes>
-  </BrowserRouter>
-  </div>
 
 <div className="twitter-timeline">
 hi i wanna thank you for holding on
