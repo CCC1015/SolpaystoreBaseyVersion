@@ -51,15 +51,4 @@ const App = ({ Component, pageProps }) => {
   );
 };
 
-<div>
-    <BrowserRouter>
-    <Routes>
-    <Route index element={<Home />} />
-    <Route path="/Home" element={<Home />} />
-    <Route path="/About" element={<About />} />
-    <Route path="/Contact" element={<Contact />} />
-    </Routes>
-    </BrowserRouter>
-    </div>  
-
 export default App;
