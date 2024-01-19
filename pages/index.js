@@ -79,25 +79,7 @@ const App = () => {
           <img src="https://imgur.com/fJEkJvJ.png" ></img>
   
     </div>
-
-<div className="twitter-timeline">
-hi i wanna thank you for holding on
-</div>
-
-<div className="twitter-timeline2">
-hi i wanna thank you for holding on
-</div>
-
-<div className="twitter-timeline3">
-hi i wanna thank you for holding on
-</div>
-
-<div className="twitter-timeline4">
-hi i wanna thank you for holding on
-</div>
-
-
-        
+   
         
         <div className="footer-container">
           <img alt="Twitter Logo" className="twitter-logo" src="twitter-logo.svg" />

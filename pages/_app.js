@@ -14,10 +14,6 @@ import { clusterApiUrl } from "@solana/web3.js";
 import "@solana/wallet-adapter-react-ui/styles.css";
 import "../styles/globals.css";
 import "../styles/App.css";
-import { BrowserRouter, Routes, Route } from "react-router-dom"
-import About from "./About";
-import Contact from "./Contact";
-import Home from "./Home";
 
 
 const App = ({ Component, pageProps }) => {
