@@ -1,7 +1,6 @@
 .App {
-  height: 100vw; 
-  width: 100vw;
-  margin-top: 300;
+  max-height: 2500px; 
+  max-width: 2500px;
   background-image: url("https://imgur.com/74ykXnp.png");
     background-repeat: no-repeat;
     background-size: cover ;
@@ -12,11 +11,12 @@
 
 
 .Logo{
-  height: 100vw; 
-  width: 100vw;
+  max-height: 300px; 
+  max-width: 300px;
   margin-top: -800px;
 margin-bottom: 500px;
 padding-right: 50px;
+padding-left: 670px;
 }
 
 .container {
