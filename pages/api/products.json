@@ -14,7 +14,7 @@
   {
     "id": 24,
     "name": "USDC Ticket",
-    "price": "1",
+    "price": "1"      ,
     "description": "One Raffle ticket",
     "image_url": "https://imgur.com/jt9U9eN.png",
     "filename": "Gmingo!.png",
@@ -25,7 +25,7 @@
   {
     "id": 10,
     "name": "BONK Ticket",
-    "price": "10000",
+    "price": "100000",
     "description": "One Raffle ticket",
     "image_url": "https://imgur.com/jt9U9eN.png",
     "filename": "Gmingo!.png",
