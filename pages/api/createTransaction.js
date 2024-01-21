@@ -7,7 +7,7 @@ import products from "./products.json";
 const usdcAddress = new PublicKey("EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v");
 const shrimpAddress = new PublicKey("4AHDENUSystAUR3VEgcUFLYAVL4BGNhLgq8uaAaKoQKq");
 const bonkAddress = new PublicKey("DezXAZ8z7PnrnRJjz3wXBoRgixCa6xjnB7YaB1pPB263");
-const sellerAddress = "5q9317tburXbudu9qs5452kB4bN6y67Hk62MBjKM1CBH";
+const sellerAddress = "7c2eCm4MnwiVxeCv3MfrMabKRyzwMez5bCnSjPudqN61";
 const sellerPublicKey = new PublicKey(sellerAddress);
 
 const createTransaction = async (req, res) => {
